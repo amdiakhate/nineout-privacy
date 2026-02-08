@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  nineout-privacy:
+    build: .
+    container_name: nineout-privacy
+    ports:
+      - "80:80"
+    restart: unless-stopped
