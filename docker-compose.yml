@@ -4,6 +4,6 @@ services:
   nineout-privacy:
     build: .
     container_name: nineout-privacy
-    ports:
-      - "80:80"
+    expose:
+      - 80
     restart: unless-stopped
