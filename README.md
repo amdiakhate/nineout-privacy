@@ -18,11 +18,13 @@ git push -u origin main
 ### 2. Dans Coolify
 
 1. **Add Resource** → **Application**
-2. **Source** : Sélectionne ton repo Git
+2. **Source** : Sélectionne ton repo Git (`https://github.com/amdiakhate/nineout-privacy`)
 3. **Build Pack** : Docker Compose
-4. **Port** : `80`
+4. **Port** : `80` (Coolify détectera automatiquement le port exposé)
 5. **Domain** : Configure ton domaine (ex: `privacy.nineout.app`)
 6. **Deploy**
+
+**Note** : Le `docker-compose.yml` utilise `expose` au lieu de `ports` pour éviter les conflits avec le reverse proxy de Coolify.
 
 ### 3. URL à utiliser dans App Store Connect
 
